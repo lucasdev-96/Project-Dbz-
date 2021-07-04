@@ -164,7 +164,7 @@ const clickEsfera = () => {
       const child = document.createElement('img')
       father.appendChild(child)
       child.classList.add('sheilongImg');
-      child.src = '/teste/projeto/c076408c95.png'
+      child.src = 'https://www.nicepng.com/png/full/195-1952134_shenron-shenlong-dragon-ball-z-png.png'
     
    })
 }
