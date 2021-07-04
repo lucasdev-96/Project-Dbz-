@@ -1,0 +1,188 @@
+body {
+  background: linear-gradient(rgba(245, 244, 244, 0.3), rgba(246, 246, 246, 0.3)) ,url('https://vignette.wikia.nocookie.net/dragonball/images/f/f7/Wallpaper.jpg/revision/latest?cb=20190802223719&path-prefix=pt-br');
+    background-size:cover;
+    background-repeat:repeat;
+    background-attachment: fixed;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --m-width: 980px;
+}
+
+
+
+header {
+  background-color: blueviolet;
+  height: 70px;
+  width:100%;
+  display: flex;
+  justify-content:center;
+  margin-bottom: 50px;
+}
+
+.child_Header {
+    margin: auto;
+    max-width: var(--m-width);
+    display: flex;
+    background-color: blueviolet;
+    height: 70px;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+}
+
+label {
+    align-self: flex-end;
+    color: white;
+    font-weight:900;
+}
+
+input {
+    height:20px;
+}
+
+.Elements {
+   display: flex;
+   justify-content: center;
+
+}
+
+.fatherOfAbout {
+    background-color: rgb(250, 249, 249);
+    width: 100%;
+    border-radius:20px;
+    box-shadow: 2px 2px gray;
+  padding: 20px;
+  text-align: justify;
+  background: linear-gradient(#5c6cb3, #072083);
+  margin-top: 60px;
+}
+
+.about {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Lexend', sans-serif;
+    color: white;
+    line-height: 2;
+}
+
+.EfectCharacters {
+    width: 100%;
+    box-shadow: 2px 2px black;
+    animation: fotos .9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-delay: 2s;
+}
+
+
+h1 {
+  font-size: 20px;
+   color: white;
+}
+
+
+.efectGoku {
+  position: fixed;
+  right: 100px;
+  top: 200px;
+  width:350px;
+}
+
+.efectGoku {
+ opacity: 0;
+  animation: pisca .9s infinite;
+}
+
+.gokuImg {
+  width: 200px;
+
+}
+@keyframes pisca {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.efectPan {
+  position: fixed;
+  width:100px;
+  left:60px;
+  top: 470px;
+}
+
+.efectPan {
+  opacity: 0;
+   animation: pisca .8s infinite;
+ 
+ }
+ /* .gokuImg:hover {
+  width:10000px
+
+} */
+
+.sheilong {
+  display: grid;
+  place-items: center;
+  height:100vh;
+
+}
+
+.sheilongImg{
+  width:900px;
+  animation: sheilong 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+  animation-direction: alternate;
+}
+
+.esfera {
+  width:300px;
+  height:300px;
+  margin-top: 100px;
+  position: fixed;
+}
+
+.esfera:hover {
+  background-image: url('https://cdn.pixabay.com/photo/2020/08/18/23/19/spheres-5499579_960_720.png');
+  border-radius: 30%;
+  background-size: cover;
+  animation: pisca .9s infinite;
+
+}
+
+@keyframes sheilong {
+ 50% {
+
+  transform: skewY(-20deg) rotate(-10deg) scale(1);
+ }
+ 100%{
+   transform: skewY(20deg) rotate(10deg) scale(2);
+ }
+}
+
+@keyframes fotos {
+  50% {
+    transform:translateY(30px);
+  }
+}
+
+.Father__elements {
+  background: linear-gradient(#f5976b, #f64a00);
+  width:33%;
+  margin:auto;
+  padding:50px 100px;
+  margin-top: 20px;
+border-radius:50px;
+}
